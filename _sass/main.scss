@@ -43,5 +43,27 @@
     border: none;
     height: 40px;
   }
+  progress {
+    -webkit-appearance: none;
+    border: none;
+
+    display: block;
+    margin: 10px 0;
+    height: 5px;
+    width: 100%;
+
+    &::-webkit-progress-bar {
+      background: #efefef;
+    }
+    &::-webkit-progress-value {
+      background: #ddd;
+    }
+  }
+  .postcode {
+    text-transform: uppercase;
+  }
 }
 
+.no-border {
+  border: none;
+}
