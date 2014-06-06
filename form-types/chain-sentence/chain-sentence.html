@@ -1,0 +1,138 @@
+---
+layout: default
+title: SH24
+---
+
+<div class="chain-sentence">
+  <section class="content-padded">
+    <article id="s1">
+      <h1>
+        I want to
+        <select onchange="cs_select(this)">
+          <option selected disabled hidden value=''></option>
+          <option data-next-step="s2">order an STI kit</option>
+          <option data-next-step="s-sxc">talk to someone</option>
+        </select>
+        .
+      </h1>
+    </article>
+
+    <article class="hide" id="s2">
+      <h1>
+        I
+        <select onchange="cs_select(this)">
+          <option selected disabled hidden value=''></option>
+          <option data-next-step="s-sxc">do</option>
+          <option data-next-step="s3">do not</option>
+        </select>
+        have any symptons.
+      </h1>
+    </article>
+
+    <article class="hide" id="s3">
+      <h1>
+          I am a
+        <select>
+          <option selected disabled hidden value=''></option>
+          <option>man</option>
+          <option>woman</option>
+        </select>
+        who has sex with
+        <select>
+          <option selected disabled hidden value=''></option>
+          <option>men</option>
+          <option>women</option>
+          <option>both men and women</option>
+        </select>
+        and I want a kit to
+        <select onchange="cs_select(this)">
+          <option selected disabled hidden value=''></option>
+          <option data-next-step="s4-1">pick up</option>
+          <option data-next-step="s4-2">be delivered</option>
+        </select>
+        .
+      </h1>
+    </article>
+
+    <article class="hide" id="s4-1">
+      <h1>
+        My postcode is
+        <span class="postcode-wrapper">
+          <input size="6" class="postcode" type="search">
+          <button onclick="cs_button(this)" data-next-step="s5-1" class="postcode-search"></button>
+        </span>
+        .
+      </h1>
+    </article>
+
+    <article class="hide" id="s4-2">
+      <h1>
+        My postcode is
+        <span class="postcode-wrapper">
+          <input size="6" class="postcode" type="search">
+          <button onclick="cs_button(this)" data-next-step="s5-2" class="postcode-search"></button>
+        </span>
+        .
+      </h1>
+    </article>
+
+    <article class="hide" id="s5-1">
+      <h1>
+        I'd like to pick it up from
+      </h1>
+
+      <div class="card">
+        <ul class="table-view">
+          <li class="table-view-cell">
+            <a onclick="cs_button(this)" data-next-step="s6-1">
+              Burrell Street Clinic
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a onclick="cs_button(this)" data-next-step="s6-1">
+              Camberwell Clinic
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="hide" id="s5-2">
+      <h1>
+        My address is
+      </h1>
+
+      <div class="card">
+        <ul class="table-view">
+          <li class="table-view-cell">
+            <a onclick="cs_button(this)" data-next-step="s6-2">
+              123 Street, London, ABC123
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a onclick="cs_button(this)" data-next-step="s6-2">
+              123a Street, London, ABC123
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="hide" id="s-sxc">
+      <h1>Link to SXC.</h1>
+    </article>
+
+    <article class="hide" id="s6-1">
+      <h1>Your kit will be ready tomorrow.</h1>
+    </article>
+
+    <article class="hide" id="s6-2">
+      <h1>Your kit will be with you tomorrow.</h1>
+    </article>
+  </section>
+</div>
+
+<script src="/assets/js/chain-sentence.js"></script>
+
+
+<!-- sections, when complete they push to top of screen and become (uneditable?) -->

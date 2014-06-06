@@ -1,10 +1,6 @@
+.no-border { border: none }
+.chain-sentence,
 .inline-form {
-  h1,
-  input,
-  select {
-    font-size: 34px;
-    line-height: 50px;
-  }
   input,
   select {
     background: #eee;
@@ -24,6 +20,34 @@
     width: auto;
 
     margin-top: 10px;
+  }
+  progress {
+    -webkit-appearance: none;
+    border: none;
+
+    display: block;
+    margin: 10px 0;
+    height: 5px;
+    width: 100%;
+
+    &::-webkit-progress-bar {
+      background: #efefef;
+    }
+    &::-webkit-progress-value {
+      background: #ddd;
+    }
+  }
+  .postcode {
+    text-transform: uppercase;
+  }
+}
+
+.inline-form {
+  h1,
+  input,
+  select {
+    font-size: 34px;
+    line-height: 50px;
   }
   .content {
     padding-bottom: 44px;
@@ -48,27 +72,50 @@
     border: none;
     height: 40px;
   }
-  progress {
-    -webkit-appearance: none;
-    border: none;
-
-    display: block;
-    margin: 10px 0;
-    height: 5px;
-    width: 100%;
-
-    &::-webkit-progress-bar {
-      background: #efefef;
-    }
-    &::-webkit-progress-value {
-      background: #ddd;
-    }
-  }
-  .postcode {
-    text-transform: uppercase;
-  }
 }
+.chain-sentence {
+  h1,
+  input,
+  select {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h1,
+  article {
+    display: inline;
+  }
+  .hide {
+    display: none
+  }
+  .card {
+    margin: 10px 0;
+  }
+  .postcode-wrapper {
+    display: inline-block;
+  }
+  .postcode,
+  .postcode-search {
+    height: 25px;
+  }
+  .postcode-search {
+    background-color: #eee;
 
-.no-border {
-  border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: 0;
+
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    margin-left: -6px;
+
+    &:after {
+      font-family: Ratchicons;
+      font-size: 18px;
+      content: '\e819';
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
