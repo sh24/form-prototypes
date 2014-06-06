@@ -37,7 +37,12 @@
   }
   .content-padded {
     vertical-align: middle;
+  }
+  .cell {
     display: table-cell;
+  }
+  .row {
+    display: table-row;
   }
   header {
     border: none;

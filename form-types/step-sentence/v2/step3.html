@@ -4,10 +4,15 @@ title: SH24
 ---
 
 <div class="inline-form">
+  <header class="bar bar-nav">
+    <progress max="100" value="50"></progress>
+  </header>
+
   <div class="content">
     <div class="table">
       <div class="content-padded cell">
-        <h1>I am a
+        <h1>
+          I am a
           <select>
             <option selected disabled hidden value=''></option>
             <option>man</option>
@@ -20,11 +25,11 @@ title: SH24
             <option>women</option>
             <option>both men and women</option>
           </select>
-          and I want
-          <select>
+          and I want a kit to
+          <select onchange="route(this)">
             <option selected disabled hidden value=''></option>
-            <option>an STI kit</option>
-            <option>someone to talk to</option>
+            <option data-href="step4-1.html">be delivered</option>
+            <option data-href="step4-2.html">pick up</option>
           </select>
           .
         </h1>
