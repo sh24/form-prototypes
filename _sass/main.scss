@@ -1,18 +1,11 @@
-.table {
-  border-spacing: 30px;
-  display: table;
-  height: 100%;
-  width: 100%;
-}
-
 .inline-form {
-  vertical-align: middle;
-  display: table-cell;
-
-  h1, select {
+  h1,
+  input,
+  select {
     font-size: 34px;
     line-height: 50px;
   }
+  input,
   select {
     background: #eee;
 
@@ -32,4 +25,23 @@
 
     margin-top: 10px;
   }
+  .content {
+    padding-bottom: 44px;
+    padding-top: 40px;
+  }
+  .table {
+    border-spacing: 30px;
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  .content-padded {
+    vertical-align: middle;
+    display: table-cell;
+  }
+  header {
+    border: none;
+    height: 40px;
+  }
 }
+
