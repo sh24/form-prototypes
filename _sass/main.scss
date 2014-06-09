@@ -139,11 +139,15 @@
       width: 100px;
       color: black;
     }
+    h1,
     .icon-male,
     .fa-male,
     .icon-female,
     .fa-female {
       background-color: rgb(200,200,200);
+    }
+    h1 {
+      padding: 10px 3px;
     }
   }
   .sexual-preference,
