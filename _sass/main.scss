@@ -1,4 +1,19 @@
 .no-border { border: none }
+.table {
+  display: table;
+  height: 100%;
+  width: 100%;
+
+  .row {
+    display: table-row;
+  }
+  .cell {
+    display: table-cell;
+  }
+}
+.postcode {
+  text-transform: uppercase;
+}
 .chain-sentence,
 .inline-form {
   input,
@@ -37,9 +52,6 @@
       background: #ddd;
     }
   }
-  .postcode {
-    text-transform: uppercase;
-  }
 }
 
 .inline-form {
@@ -53,20 +65,11 @@
     padding-bottom: 44px;
     padding-top: 40px;
   }
-  .table {
-    border-spacing: 30px;
-    display: table;
-    height: 100%;
-    width: 100%;
-  }
   .content-padded {
     vertical-align: middle;
   }
-  .cell {
-    display: table-cell;
-  }
-  .row {
-    display: table-row;
+  .table {
+    border-spacing: 30px;
   }
   header {
     border: none;
@@ -117,5 +120,47 @@
   .end {
     text-align: center;
     padding: 60px;
+  }
+}
+.icon-form {
+  .table {
+    border-spacing: 30px;
+    margin: 0 auto;
+    width: 320px;
+  }
+  .cell {
+    text-align: center;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+
+    i {
+      /*background-color: #eee;*/
+      font-size: 80px;
+      padding: 10px 0;
+      cursor: pointer;
+      width: 100px;
+      color: black;
+      /*color: transparent;*/
+       /*-webkit-text-stroke: 1px black;*/
+    }
+    .icon-male,
+    .fa-male {
+      background-color: rgb(166, 198, 255);
+    }
+    .icon-female,
+    .fa-female {
+      background-color: rgb(255, 210, 218);
+    }
+  }
+  .sexual-preference,
+  .gender {
+    & input {
+      visibility: hidden;
+    }
+  }
+  input:checked + label {
+    opacity: 1;
   }
 }
