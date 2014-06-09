@@ -125,39 +125,32 @@
 .icon-form {
   .table {
     border-spacing: 30px;
-    margin: 0 auto;
-    width: 320px;
   }
   .cell {
+    -webkit-tap-highlight-color: transparent;
     text-align: center;
     opacity: 0.6;
-    &:hover {
-      opacity: 1;
-    }
+    width: 113px;
 
     i {
-      /*background-color: #eee;*/
       font-size: 80px;
       padding: 10px 0;
       cursor: pointer;
       width: 100px;
       color: black;
-      /*color: transparent;*/
-       /*-webkit-text-stroke: 1px black;*/
     }
     .icon-male,
-    .fa-male {
-      background-color: rgb(166, 198, 255);
-    }
+    .fa-male,
     .icon-female,
     .fa-female {
-      background-color: rgb(255, 210, 218);
+      background-color: rgb(200,200,200);
     }
   }
   .sexual-preference,
   .gender {
     & input {
       visibility: hidden;
+      display: none;
     }
   }
   input:checked + label {
