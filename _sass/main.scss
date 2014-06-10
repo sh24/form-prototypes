@@ -208,11 +208,6 @@
       padding-left: 0;
     }
   }
-  .symptoms {
-    input, label {
-      display: inline;
-    }
-  }
   input:not([type="date"]),
   select {
     background: #eee;
@@ -252,6 +247,42 @@
       margin-top: 2px;
       font-family: FontAwesome;
       content: '\f00d';
+    }
+  }
+}
+.large-modular-form {
+  form {
+    max-width: 568px;
+  }
+  input:not([type="checkbox"]),
+  select {
+    display: block;
+    border: none;
+    width: 100%;
+    min-width: 100%;
+    height: 50px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .card {
+    margin: 0;
+  }
+  .field {
+    display: table;
+    width: 100%;
+
+    .label-wrapper,
+    .input-wrapper {
+      vertical-align: middle;
+      display: table-cell;
+    }
+    .label-wrapper {
+      padding-right: 20px;
+      text-align: right;
+      width: 29%;
+    }
+    .input-wrapper {
+      width: 71%;
     }
   }
 }
