@@ -190,6 +190,7 @@
   }
   .cell {
     width: 50%;
+    opacity: 0.3;
   }
   .row label:first-of-type {
     border-right: 1px solid #ddd;
@@ -227,7 +228,7 @@
 
     padding: 0;
     margin: 8px 0;
-    height: auto;
+    height: 20px;
     width: 65%;
 
     font-family: "Helvetica Neue",Helvetica,sans-serif;
