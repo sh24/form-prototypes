@@ -82,16 +82,23 @@ title: SH24
           </div>
         </div>
 
-        <div class="field">
+        <div class="field symptoms">
           <div class="label-wrapper">
             <label>Do you have any symptoms?</label>
           </div>
-          <div class="input-wrapper">
-            <select>
-              <option selected disabled hidden value=''></option>
-              <option>yes</option>
-              <option>no</option>
-            </select>
+          <div class="card input-wrapper">
+            <div class="table">
+              <div class="row">
+                <input id="symn" type="radio" name="symptoms" value="no">
+                <label for="symn" class="cell">
+                  <h1>no</h1>
+                </label>
+                <input id="symy" type="radio" name="symptoms" value="yes">
+                <label for="symy" class="cell">
+                  <h1>yes</h1>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </fieldset>
@@ -162,7 +169,7 @@ title: SH24
           <div class="label-wrapper">
           </div>
           <div class="input-wrapper">
-            <a href="#" class="btn btn-block">Get my address</a>
+            <a href="#" onclick="inputAddress()" class="btn btn-block">Get my address</a>
           </div>
         </div>
 
@@ -171,7 +178,7 @@ title: SH24
             <label>Address line 1</label>
           </div>
           <div class="input-wrapper">
-            <input class="" type="text" placeholder="">
+            <input id="field1" class="" type="text" placeholder="">
           </div>
         </div>
 
@@ -180,7 +187,7 @@ title: SH24
             <label>Address line 2</label>
           </div>
           <div class="input-wrapper">
-            <input class="" type="text" placeholder="">
+            <input id="field2" class="" type="text" placeholder="">
           </div>
         </div>
 
@@ -189,7 +196,7 @@ title: SH24
             <label>Town/city</label>
           </div>
           <div class="input-wrapper">
-            <input class="" type="text" placeholder="">
+            <input id="field3" class="" type="text" placeholder="">
           </div>
         </div>
 
@@ -198,7 +205,7 @@ title: SH24
             <label>County</label>
           </div>
           <div class="input-wrapper">
-            <input class="" type="text" placeholder="">
+            <input id="field4" class="" type="text" placeholder="">
           </div>
         </div>
 
@@ -207,7 +214,7 @@ title: SH24
             <label>Postcode</label>
           </div>
           <div class="input-wrapper">
-            <input class="postcode" type="text" placeholder="">
+            <input id="field5"class="postcode" type="text" placeholder="">
           </div>
         </div>
       </fieldset>
@@ -254,3 +261,5 @@ title: SH24
     </form>
   </div>
 </div>
+
+<script src="/assets/js/modular-form.js"></script>
