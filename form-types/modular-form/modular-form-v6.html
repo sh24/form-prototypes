@@ -1,0 +1,268 @@
+---
+layout: default
+title: SH24
+---
+
+<div class="window">
+  <div class="modular-form large-modular-form windowed-form">
+    <div class="content">
+      <form>
+        <fieldset class="gender">
+          <div class="field">
+            <div class="label-wrapper">
+              Gender
+            </div>
+            <div class="card input-wrapper">
+              <div class="table">
+                <div class="row" id="genderRow">
+                  <input id="gm" type="radio" name="gender" value="male">
+                  <label for="gm" class="cell">
+                    <i class="fa fa-male"></i>
+                  </label>
+                  <input id="gf" type="radio" name="gender" value="female">
+                  <label for="gf" class="cell">
+                    <i class="fa fa-female"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="sexual-preference">
+          <div class="field">
+            <div class="label-wrapper">
+              Sexual preferences
+            </div>
+            <div class="card input-wrapper">
+              <div class="table">
+                <div class="row">
+                  <input id="spm" type="checkbox" name="sexualPreference" value="male">
+                  <label for="spm" class="cell">
+                    <i class="fa fa-male"></i>
+                  </label>
+                  <input id="spf" type="checkbox" name="sexualPreference" value="female">
+                  <label for="spf" class="cell">
+                    <i class="fa fa-female"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Postcode</label>
+              <br/>&nbsp;<br/>&nbsp;
+            </div>
+            <div class="input-wrapper">
+              <input onfocusout="checkPostcode(this)" class="postcode" type="text" placeholder="SE1 / SE11 / SW8">
+              <div id="postcodeValidationReport" class="postcode-validation">
+                SH24 is currently only available to <strong>Lambeth</strong> and <strong>Southwark</strong> boroughs.
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <div class="field last-sex">
+            <div class="label-wrapper">
+              <label>Have you had sex in the last 72 hours?</label>
+            </div>
+            <div class="input-wrapper">
+              <div class="card table">
+                <div class="row">
+                  <input id="lsy" type="radio" name="last-sex" value="yes">
+                  <label for="lsy" class="cell">
+                    <h1>yes</h1>
+                  </label>
+                  <input id="lsn" type="radio" name="last-sex" value="no">
+                  <label for="lsn" class="cell">
+                    <h1>no</h1>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field symptoms">
+            <div class="label-wrapper">
+              <label>Do you have any symptoms of an STI?</label>
+            </div>
+            <div class="input-wrapper">
+              <div class="card table">
+                <div class="row">
+                  <input id="symy" type="radio" name="symptoms" value="yes">
+                  <label for="symy" class="cell">
+                    <h1>yes</h1>
+                  </label>
+                  <input id="symn" type="radio" name="symptoms" value="no">
+                  <label for="symn" class="cell">
+                    <h1>no</h1>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Ethnicity</label>
+            </div>
+            <div class="input-wrapper">
+              <select>
+                <option selected disabled hidden>Please select</option>
+                <option>White</option>
+                <option>Mixed Parentage</option>
+                <option>Asian / Asian British</option>
+                <option>Caribbean</option>
+                <option>African</option>
+                <option>Other Black</option>
+                <option>Chinese / other Ethnic group</option>
+                <option>I'd rather not say</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <div class="field">
+            <div class="label-wrapper">
+              <label>First name</label>
+            </div>
+            <div class="input-wrapper">
+              <input class="" type="text" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Last name</label>
+            </div>
+            <div class="input-wrapper">
+              <input class="" type="text" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Date of birth</label>
+            </div>
+            <div class="input-wrapper">
+              <input type="date" name="bday">
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <div class="field">
+            <div class="label-wrapper">
+            </div>
+            <div class="input-wrapper">
+              <a href="#" onclick="inputAddress()" class="btn btn-block">Get my address</a>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Address line 1</label>
+            </div>
+            <div class="input-wrapper">
+              <input id="field1" class="" type="text" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Address line 2</label>
+            </div>
+            <div class="input-wrapper">
+              <input id="field2" class="" type="text" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Town/city</label>
+            </div>
+            <div class="input-wrapper">
+              <input id="field3" class="" type="text" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>County</label>
+            </div>
+            <div class="input-wrapper">
+              <input id="field4" class="" type="text" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Postcode</label>
+            </div>
+            <div class="input-wrapper">
+              <input id="field5"class="postcode" type="text" placeholder="">
+            </div>
+          </div>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Mobile</label>
+            </div>
+            <div class="input-wrapper">
+              <input class="" type="tel" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Notify me by SMS?</label>
+            </div>
+            <div class="input-wrapper">
+              <input id="mn" type="checkbox" checked value="yes">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Email</label>
+            </div>
+            <div class="input-wrapper">
+              <input class="" type="email" placeholder="">
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-wrapper">
+              <label>Notify me by email?</label>
+            </div>
+            <div class="input-wrapper">
+              <input id="en" type="checkbox" value="yes">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/modular-form.js"></script>
