@@ -4,13 +4,37 @@ function checkPostcode(el) {
   console.log("match postcode: ", postcode);
   if (!!postcode) {
     colour = 'rgb(149,233,149)';
-    output = 'Great, you live in the catchment area!<br/>';
+    output = 'Great, you live in the catchment area!<br/><br/>';
   } else {
     colour = 'rgb(200,200,200)'
     output = 'SH24 is currently only available to <strong>Lambeth</strong> and <strong>Southwark</strong> boroughs.';
   }
   document.getElementsByClassName('postcode-validation')[0].style.color = colour;
   document.getElementById('postcodeValidationReport').innerHTML = output;
+}
+
+function checkPostcodeWithAPI(el) {
+  var output, colour;
+  $.get(
+    'http://api.postcodes.io/postcodes/' + el.value
+  ).done(function (data) {
+    var postcode = data.result.ccg.match(/^(NHS Southwark CCG|NHS Lambeth CCG)$/)
+    if (!!postcode) {
+      colour = 'rgb(149,233,149)';
+      output = 'Great, you live in the catchment area!<br/><br/>';
+    } else {
+      colour = 'rgb(200,200,200)'
+      output = 'SH24 is currently only available to <strong>Lambeth</strong> and <strong>Southwark</strong> boroughs.';
+    }
+  }).fail(function () {
+    console.log('postcode lookup failed');
+    colour = 'rgb(200,200,200)'
+    output = 'SH24 is currently only available to <strong>Lambeth</strong> and <strong>Southwark</strong> boroughs.';
+  }).always(function () {
+    document.getElementsByClassName('postcode-validation')[0].style.color = colour;
+    document.getElementById('postcodeValidationReport').innerHTML = output;
+  });
+
 }
 
 function inputAddress() {
