@@ -1,0 +1,134 @@
+.susy {
+  $font-size: 16px;
+  $line-height: 20px;
+  $font-colour: #45494e;
+  $panel-colour: #60efa8;
+  $panel-colour-bottom: #4ecb8e;
+  $button-colour: #ea5e5b;
+  $button-colour-bottom: #c62817;
+
+  font-family: 'Helvetica Neue';
+
+  .banner {
+    background-color: #53585f;
+
+    h1 {
+      color: white;
+      text-align: center;
+      font-weight: 200;
+      font-size: 28px;
+      padding: 8px;
+    }
+  }
+  .page {
+    background-color: #f2f3f5;
+  }
+  .form-info {
+    padding: 10px 20px;
+  }
+  li, p {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: black;
+  }
+  ul {
+    -webkit-padding-start: 0;
+    margin-left: 20px;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: $button-colour;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-bottom: 7px solid $button-colour-bottom;
+    outline: none;
+
+    &:active {
+      position: relative;
+      top: 7px;
+      border-bottom: none;
+    }
+  }
+
+  .step1 {
+    .form-info {
+      h1, h2 {
+        font-size: 32px;
+        display: inline;
+      }
+      h1 {
+        padding-right: 4px;
+      }
+      h2 {
+        font-weight: 200;
+      }
+      h3 {
+        margin-top: 12px;
+        font-size: 22px;
+      }
+      p {
+        margin-top: 15px;
+      }
+      .icon {
+        margin-right: 12px;
+      }
+      ul.checklist {
+        margin-left: 0;
+        list-style: none;
+
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .form-fields {
+      padding-top: 10px;
+      padding-right: 20px;
+
+      .form-fields-wrapper {
+        background-color: $panel-colour;
+        border-bottom: 10px solid $panel-colour-bottom;
+        padding: 25px 10px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      .buttons {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      table {
+        color: rgba(255,255,255,0.9);
+        table-layout: fixed;
+        border-collapse: collapse;
+        width: 100%;
+
+        .no {
+          height: 50px;
+          width: 64px;
+          text-align: center;
+          background-color: rgba(0,0,0,0.3);
+          border-bottom: 5px solid $panel-colour;
+          border-right: 5px solid $panel-colour;
+        }
+
+        .step {
+          background-color: rgba(0,0,0,0.15);
+          border-bottom: 5px solid $panel-colour;
+          padding: 10px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

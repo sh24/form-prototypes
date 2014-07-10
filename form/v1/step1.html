@@ -2,45 +2,58 @@
 layout: susy
 title: SH24
 ---
-<aside class="form-info">
-  <h1>SH24 - The sexual health service</h1>
-  <p>
-    SH24 is a free, convenient and discrete sexual health check up. Get a test kit sent you by post. The test takes 10 minutes and you simply post it back in the envelope provided.
-  </p>
+<div class="step1">
+  <aside class="form-info">
+    <h1>SH24</h1>
+    <h2>The Sexual Health Service</h2>
+    <p>
+      SH24 is a free, convenient and discrete sexual health check up. Get a test kit sent you by post. The test takes 10 minutes and you simply post it back in the envelope provided.
+    </p>
 
-  <h2>Get tested for...</h2>
-  <ul>
-    <li><i class="ss-icon">&#x2713;</i>Chlamydia</li>
-    <li><i class="ss-icon">&#x2713;</i>Gonorrhoea</li>
-    <li><i class="ss-icon">&#x2713;</i>Syphilis</li>
-    <li><i class="ss-icon">&#x2713;</i>HIV</li>
-  </ul>
+    <h3>Get tested for...</h3>
+    <ul class="checklist">
+      <li><i class="icon">&#x2713;</i>Chlamydia</li>
+      <li><i class="icon">&#x2713;</i>Gonorrhoea</li>
+      <li><i class="icon">&#x2713;</i>Syphilis</li>
+      <li><i class="icon">&#x2713;</i>HIV</li>
+    </ul>
 
-  <h2>Key facts...</h2>
-  <ul>
-    <li>SH24 is free to use if you live in Lambeth or Southwark</li>
-    <li>Your private data will be stored securely on SH24 servers</li>
-    <li>Personal information about you and your results will never be shared with anyone</li>
-  </ul>
-</aside>
+    <h3>Key facts...</h3>
+    <ul>
+      <li>SH24 is free to use if you live in the London boroughs of Lambeth and Southwark</li>
+      <li>Your private data will be stored securely on SH24 servers</li>
+    </ul>
+  </aside>
 
-<section class="form-fields">
-  <h2>Get started now</h2>
-  <p>
-    All kits are sent in the post. This service is only available to residents of Southwark and Lambeth
-  </p>
+  <section class="form-fields">
+    <div class="form-fields-wrapper">
+      <h2>Get started.</h2>
+      <h3>What kit do you need?</h3>
 
-  <fieldset>
-    <%= f.text_field :postcode %>
-    <%= f.submit 'Start' %>
-    <%= @order.errors[:base].to_sentence.html_safe if @order.errors[:base].present? %>
-  </fieldset>
+      <div class="buttons">
+        <button>Female test</button>
+        <button>Male test</button>
+      </div>
 
-  <h2>How SH24 works</h2>
-  <ul>
-    <li>Order online and receive kit by post</li>
-    <li>Do the test in less than 5 mins</li>
-    <li>Return the test for free to our lab</li>
-    <li>Get your reslits in a text message</li>
-  </ul>
-</section>
+      <h3>How SH24 works</h3>
+      <table>
+        <tr>
+          <td class="no">1</td>
+          <td class="step">Order online and receive kit by post</td>
+        </tr>
+        <tr>
+          <td class="no">2</td>
+          <td class="step">Do the test in less than 5 mins</td>
+        </tr>
+        <tr>
+          <td class="no">3</td>
+          <td class="step">Return the test for free to our lab</td>
+        </tr>
+        <tr>
+          <td class="no">4</td>
+          <td class="step">Get your reslits in a text message</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</div>

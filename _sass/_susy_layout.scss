@@ -8,19 +8,20 @@ $grid-padding: $gutter-width;
 $break: 12;
 
 .susy {
+  .banner {
+    width: 100%;
+  }
   .page {
     @include container($total-columns, $break);
-    $grid-background-column-color: rgba(#aad, .25);
-    @include susy-grid-background;
+    /*$grid-background-column-color: rgba(#aad, .25);*/
+    /*@include susy-grid-background;*/
   }
 
   @include at-breakpoint($break) {
     .main,
-    .banner,
     .form-fields-container {
       @include span-columns($total-columns omega, $break);
-    }
-    .form-fields-container {
+
       .form-info {
         @include span-columns(6, $total-columns);
       }
@@ -30,3 +31,5 @@ $break: 12;
     }
   }
 }
+
+@import '_susy_form';
