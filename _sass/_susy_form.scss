@@ -8,6 +8,7 @@
   $button-colour-bottom: #c62817;
 
   font-family: 'Helvetica Neue';
+  background-color: #f2f3f5;
 
   .banner {
     background-color: #53585f;
@@ -20,17 +21,17 @@
       padding: 8px;
     }
   }
-  .page {
-    background-color: #f2f3f5;
-  }
+
   .form-info {
     padding: 10px 20px;
   }
+
   li, p {
     font-size: $font-size;
     line-height: $line-height;
     color: black;
   }
+
   ul {
     -webkit-padding-start: 0;
     margin-left: 20px;
