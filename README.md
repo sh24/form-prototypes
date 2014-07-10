@@ -7,3 +7,8 @@ Bundle it:
 Run it:
 
     jekyll serve -w
+
+Watch it:
+
+    cd _sass
+    compass watch
