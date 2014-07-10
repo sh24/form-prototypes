@@ -1,4 +1,3 @@
-*.lock
 .rvmrc
 .sass-cache
 .ruby-version
