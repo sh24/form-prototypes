@@ -1,0 +1,32 @@
+@import 'breakpoint';
+@import 'susy';
+
+$total-columns: 12;
+$column-width: 45px;
+$gutter-width: 10px;
+$grid-padding: $gutter-width;
+$break: 12;
+
+.susy {
+  .page {
+    @include container($total-columns, $break);
+    $grid-background-column-color: rgba(#aad, .25);
+    @include susy-grid-background;
+  }
+
+  @include at-breakpoint($break) {
+    .main,
+    .banner,
+    .form-fields-container {
+      @include span-columns($total-columns omega, $break);
+    }
+    .form-fields-container {
+      .form-info {
+        @include span-columns(6, $total-columns);
+      }
+      .form-fields {
+        @include span-columns(6 omega, $total-columns);
+      }
+    }
+  }
+}
