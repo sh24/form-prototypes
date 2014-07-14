@@ -26,7 +26,19 @@
   }
 
   .form-info {
-    padding: 10px 20px;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    margin: 12px 0;
   }
 
   li, p {
@@ -48,7 +60,9 @@
     border: none;
     background-color: $button-colour;
     color: white;
+    font-family: "Helvetica Neue",Helvetica,sans-serif;
     font-weight: 500;
+    font-size: 17px;
     padding: 6px 0;
     width: 114px;
     border-bottom: 7px solid $button-colour-bottom;
@@ -108,6 +122,8 @@
     select.selection {
       border: none;
       border-radius: 0;
+      font-size: 14px;
+      width: 100%;
     }
 
     p {
@@ -125,6 +141,9 @@
       border-radius: 0;
       width: auto;
       margin: 0;
+    }
+    input[type=text] {
+      height: 35px;
     }
     input[type=radio],
     input[type=checkbox] {
@@ -177,7 +196,6 @@
     }
     .form-fields {
       padding-top: 10px;
-      padding-right: 20px;
 
       h3 {
         font-size: 20px;
@@ -236,6 +254,11 @@
     .package {
       width: 100%;
       height: 200px;
+    }
+
+    ol {
+      margin: 20px 0;
+      padding-left: 40px;
     }
   }
 }
