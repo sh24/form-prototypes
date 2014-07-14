@@ -79,14 +79,24 @@
     border: none;
     color: $fieldset-font-colour;
 
-    label {
-      font-weight: 800;
-      font-size: 18px;
+    .selection {
+      background-color: white;
+      padding: 10px;
+      list-style: none;
+    }
+
+    ul.selection {
+      margin: 0;
     }
 
     p {
       margin: 14px 0;
       color: $fieldset-font-colour;
+    }
+
+    .form-title {
+      font-weight: 800;
+      font-size: 18px;
     }
 
     input {
@@ -95,7 +105,10 @@
       width: auto;
       margin: 0;
     }
-
+    input[type=radio],
+    input[type=checkbox] {
+      margin-right: 7px;
+    }
     input.medium {
       width: 145px;
     }
@@ -154,6 +167,7 @@
 
       button {
         padding: 10px 20px;
+        width: auto;
       }
 
       table {
