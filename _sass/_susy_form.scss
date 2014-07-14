@@ -6,6 +6,9 @@
   $panel-colour-bottom: #4ecb8e;
   $button-colour: #ea5e5b;
   $button-colour-bottom: #c62817;
+  $button-colour-gray: #a7aaa9;
+  $button-colour-gray-bottom: #838a95;
+  $fieldset-font-colour: #53585f;
 
   font-family: 'Helvetica Neue';
   background-color: #f2f3f5;
@@ -46,7 +49,8 @@
     background-color: $button-colour;
     color: white;
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 6px 0;
+    width: 114px;
     border-bottom: 7px solid $button-colour-bottom;
     outline: none;
 
@@ -54,6 +58,52 @@
       position: relative;
       top: 7px;
       border-bottom: none;
+    }
+  }
+
+  button.gray {
+    background-color: $button-colour-gray;
+    border-bottom: 7px solid $button-colour-gray-bottom;
+  }
+
+  .form-fields {
+    .form-fields-wrapper {
+      background-color: $panel-colour;
+      border-bottom: 10px solid $panel-colour-bottom;
+      padding: 25px 10px;
+    }
+  }
+
+  fieldset {
+    margin-bottom: 20px;
+    border: none;
+    color: $fieldset-font-colour;
+
+    label {
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 14px 0;
+      color: $fieldset-font-colour;
+    }
+
+    input {
+      border: none;
+      border-radius: 0;
+      width: auto;
+      margin: 0;
+    }
+
+    input.medium {
+      width: 145px;
+    }
+    input.small {
+      width: 50px;
+    }
+    input.capitalise {
+      text-transform: uppercase;
     }
   }
 
@@ -92,12 +142,6 @@
       padding-top: 10px;
       padding-right: 20px;
 
-      .form-fields-wrapper {
-        background-color: $panel-colour;
-        border-bottom: 10px solid $panel-colour-bottom;
-        padding: 25px 10px;
-      }
-
       h3 {
         font-size: 20px;
       }
@@ -106,6 +150,10 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 30px;
+      }
+
+      button {
+        padding: 10px 20px;
       }
 
       table {
