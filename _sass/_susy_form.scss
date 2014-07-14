@@ -83,6 +83,11 @@
       background-color: white;
       padding: 10px;
       list-style: none;
+
+      .selection-heading {
+        font-weight: 800;
+        line-height: 30px;
+      }
     }
 
     ul.selection {
@@ -199,6 +204,12 @@
           width: auto;
         }
       }
+    }
+  }
+
+  .step5 {
+    .selection {
+      margin-top: 14px;
     }
   }
 }
