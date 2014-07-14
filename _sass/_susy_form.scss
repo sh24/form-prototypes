@@ -56,6 +56,11 @@
     }
   }
 
+  .button.gray {
+    background-color: $button-colour-gray;
+    border-bottom: 7px solid $button-colour-gray-bottom;
+  }
+
   .button {
     border: none;
     background-color: $button-colour;
@@ -72,11 +77,6 @@
       top: 7px;
       border-bottom: none;
     }
-  }
-
-  .button.gray {
-    background-color: $button-colour-gray;
-    border-bottom: 7px solid $button-colour-gray-bottom;
   }
 
   .buttons {

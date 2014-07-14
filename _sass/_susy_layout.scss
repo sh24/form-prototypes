@@ -1,8 +1,3 @@
-@import 'compass';
-@import 'compass/reset';
-@import 'breakpoint';
-@import 'susy';
-
 $total-columns: 12;
 $column-width: 67px;
 $gutter-width: 20px;
@@ -33,6 +28,3 @@ $break: 12;
     }
   }
 }
-
-@import '_susy_defaults';
-@import '_susy_form';
