@@ -74,6 +74,18 @@
     }
   }
 
+  .lead {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 16px 0;
+  }
+
+  .subtext {
+    li, p {
+      color: $fieldset-font-colour;
+    }
+  }
+
   fieldset {
     margin-bottom: 20px;
     border: none;
@@ -216,6 +228,14 @@
   .step6 {
     .buttons {
       margin-top: 30px;
+    }
+  }
+
+  .step7 {
+    .map,
+    .package {
+      width: 100%;
+      height: 200px;
     }
   }
 }
