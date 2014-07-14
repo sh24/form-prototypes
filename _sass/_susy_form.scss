@@ -56,15 +56,14 @@
     }
   }
 
-  button {
+  .button {
     border: none;
     background-color: $button-colour;
     color: white;
     font-family: "Helvetica Neue",Helvetica,sans-serif;
     font-weight: 500;
     font-size: 17px;
-    padding: 6px 0;
-    width: 114px;
+    padding: 6px 30px;
     border-bottom: 7px solid $button-colour-bottom;
     outline: none;
 
@@ -75,9 +74,14 @@
     }
   }
 
-  button.gray {
+  .button.gray {
     background-color: $button-colour-gray;
     border-bottom: 7px solid $button-colour-gray-bottom;
+  }
+
+  .buttons {
+    padding-top: 10px;
+    padding-bottom: 40px;
   }
 
   .form-fields {
@@ -203,13 +207,12 @@
 
       .buttons {
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 30px;
       }
 
-      button {
-        padding: 10px 20px;
-        width: auto;
+      .button {
+        padding: 6px 20px;
       }
 
       table {
@@ -245,7 +248,9 @@
 
   .step6 {
     .buttons {
-      margin-top: 30px;
+      padding: 0;
+      padding-bottom: 10px;
+      padding-top: 30px;
     }
   }
 
