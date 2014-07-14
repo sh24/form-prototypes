@@ -19,7 +19,7 @@ $break: 12;
 
   @include at-breakpoint(650px $break) {
     .main,
-    .form-fields-container {
+    .columns-container {
       @include span-columns($total-columns omega, $break);
 
       .form-info {
