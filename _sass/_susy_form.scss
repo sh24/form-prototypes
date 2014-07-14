@@ -88,6 +88,10 @@
     ul.selection {
       margin: 0;
     }
+    select.selection {
+      border: none;
+      border-radius: 0;
+    }
 
     p {
       margin: 14px 0;
@@ -108,6 +112,9 @@
     input[type=radio],
     input[type=checkbox] {
       margin-right: 7px;
+    }
+    input.large {
+      width: 190px;
     }
     input.medium {
       width: 145px;
