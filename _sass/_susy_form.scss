@@ -104,31 +104,32 @@
     }
   }
 
+  .selection {
+    background-color: white;
+    padding: 10px;
+    list-style: none;
+
+    .selection-heading {
+      font-weight: 800;
+      line-height: 30px;
+    }
+  }
+
+  ul.selection {
+    margin: 0;
+  }
+  select.selection {
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    width: 100%;
+  }
+
   fieldset {
     margin-bottom: 20px;
     border: none;
     color: $fieldset-font-colour;
 
-    .selection {
-      background-color: white;
-      padding: 10px;
-      list-style: none;
-
-      .selection-heading {
-        font-weight: 800;
-        line-height: 30px;
-      }
-    }
-
-    ul.selection {
-      margin: 0;
-    }
-    select.selection {
-      border: none;
-      border-radius: 0;
-      font-size: 14px;
-      width: 100%;
-    }
 
     p {
       margin: 14px 0;
@@ -316,6 +317,12 @@
     ol {
       margin: 20px 0;
       padding-left: 40px;
+    }
+  }
+
+  .b .step1 {
+    .buttons {
+      text-align: left;
     }
   }
 }
