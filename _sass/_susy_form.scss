@@ -220,6 +220,10 @@
     clear: left;
   }
 
+  .centre {
+    text-align: center;
+  }
+
   .step1 {
     .form-info {
       h1, h2 {
@@ -310,8 +314,9 @@
   .step7 {
     .map,
     .package {
+      margin-top: 20px;
       width: 100%;
-      height: 200px;
+      max-width: 320px;
     }
 
     ol {
