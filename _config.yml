@@ -1,2 +1,2 @@
 exclude: ['Gem*','Guard*','*.rb','.git*','README.md','vendor','deploy']
-baseurl: /sh24-prototypes
+baseurl: /form-prototypes
