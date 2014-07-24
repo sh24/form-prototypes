@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <title>SH24</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, width=device-width, height=device-height">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href="/form-prototypes/assets/css/ratchet.min.css" rel="stylesheet">
+  <link href="/form-prototypes/assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/form-prototypes/assets/css/fontello.css" rel="stylesheet">
+  <link href="/form-prototypes/assets/css/ratchet_styles.css" rel="stylesheet">
+  <script src="/form-prototypes/assets/js/main.js"></script>
+</head>
+
+
+  <body class="default">
+
+    <div class="bar bar-standard bar-header-secondary">
+  <div class="segmented-control">
+    <a class="control-item" href="#male">Male</a>
+    <a class="control-item" href="#female">Female</a>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="control-content active">
+    <div class="content-padded">
+      Homepage
+    </div>
+  </div>
+
+  <div id="male" class="control-content">
+    <form>
+      <div class="content-padded">
+        <ul class="table-view">
+          <li class="table-view-cell">
+            Kit #1
+            <div class="toggle">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+          <li class="table-view-cell">
+            Kit #2
+            <div class="toggle active">
+              <div class="toggle-handle"></div>
+            </div>
+          </li>
+        </ul>
+        <input type="text" placeholder="Postcode">
+        <button class="btn btn-positive btn-block">Order kit</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="female" class="control-content">
+    <form>
+      <div class="content-padded">
+        <input type="text" placeholder="Postcode">
+        <button class="btn btn-positive btn-block">Order kit</button>
+      </div>
+    </form>
+  </div>
+
+
+  </body>
+</html>

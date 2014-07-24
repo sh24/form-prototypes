@@ -1,0 +1,376 @@
+/* line 2, ../../_sass/_form_types.scss */
+.default .gray-text {
+  color: #c8c8c8;
+}
+/* line 5, ../../_sass/_form_types.scss */
+.default .no-border {
+  border: none;
+}
+/* line 6, ../../_sass/_form_types.scss */
+.default .table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+/* line 11, ../../_sass/_form_types.scss */
+.default .table .row {
+  display: table-row;
+}
+/* line 14, ../../_sass/_form_types.scss */
+.default .table .cell {
+  display: table-cell;
+}
+/* line 18, ../../_sass/_form_types.scss */
+.default .postcode {
+  text-transform: uppercase;
+}
+/* line 24, ../../_sass/_form_types.scss */
+.default .chain-sentence input,
+.default .chain-sentence select,
+.default .inline-form input,
+.default .inline-form select {
+  background: #eee;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+}
+/* line 43, ../../_sass/_form_types.scss */
+.default .chain-sentence progress,
+.default .inline-form progress {
+  -webkit-appearance: none;
+  border: none;
+  display: block;
+  margin: 10px 0;
+  height: 5px;
+  width: 100%;
+}
+/* line 52, ../../_sass/_form_types.scss */
+.default .chain-sentence progress::-webkit-progress-bar,
+.default .inline-form progress::-webkit-progress-bar {
+  background: #efefef;
+}
+/* line 55, ../../_sass/_form_types.scss */
+.default .chain-sentence progress::-webkit-progress-value,
+.default .inline-form progress::-webkit-progress-value {
+  background: #ddd;
+}
+/* line 64, ../../_sass/_form_types.scss */
+.default .inline-form h1,
+.default .inline-form input,
+.default .inline-form select {
+  font-size: 34px;
+  line-height: 50px;
+}
+/* line 68, ../../_sass/_form_types.scss */
+.default .inline-form .content {
+  padding-bottom: 44px;
+  padding-top: 40px;
+}
+/* line 72, ../../_sass/_form_types.scss */
+.default .inline-form .content-padded {
+  vertical-align: middle;
+}
+/* line 75, ../../_sass/_form_types.scss */
+.default .inline-form .table {
+  border-spacing: 30px;
+}
+/* line 78, ../../_sass/_form_types.scss */
+.default .inline-form header {
+  border: none;
+  height: 40px;
+}
+/* line 86, ../../_sass/_form_types.scss */
+.default .chain-sentence h1,
+.default .chain-sentence input,
+.default .chain-sentence select {
+  font-size: 20px;
+  line-height: 24px;
+}
+/* line 90, ../../_sass/_form_types.scss */
+.default .chain-sentence .hide {
+  display: none;
+}
+/* line 93, ../../_sass/_form_types.scss */
+.default .chain-sentence .card {
+  margin: 10px 0;
+}
+/* line 96, ../../_sass/_form_types.scss */
+.default .chain-sentence .postcode-wrapper {
+  display: inline-block;
+}
+/* line 100, ../../_sass/_form_types.scss */
+.default .chain-sentence .postcode,
+.default .chain-sentence .postcode-search {
+  height: 25px;
+}
+/* line 103, ../../_sass/_form_types.scss */
+.default .chain-sentence .postcode-search {
+  background-color: #eee;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-left: -6px;
+}
+/* line 116, ../../_sass/_form_types.scss */
+.default .chain-sentence .postcode-search:after {
+  font-family: Ratchicons;
+  font-size: 18px;
+  content: '\e819';
+  height: 20px;
+  width: 20px;
+}
+/* line 124, ../../_sass/_form_types.scss */
+.default .chain-sentence .end {
+  text-align: center;
+  padding: 60px;
+}
+/* line 131, ../../_sass/_form_types.scss */
+.default .icon-form .table,
+.default .modular-form .table {
+  border-spacing: 30px;
+}
+/* line 134, ../../_sass/_form_types.scss */
+.default .icon-form .cell,
+.default .modular-form .cell {
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  opacity: 0.6;
+  width: 113px;
+}
+/* line 140, ../../_sass/_form_types.scss */
+.default .icon-form .cell i,
+.default .modular-form .cell i {
+  font-size: 80px;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 100px;
+  color: black;
+}
+/* line 150, ../../_sass/_form_types.scss */
+.default .icon-form .sexual-preference input,
+.default .icon-form .gender input,
+.default .modular-form .sexual-preference input,
+.default .modular-form .gender input {
+  visibility: hidden;
+  display: none;
+}
+/* line 155, ../../_sass/_form_types.scss */
+.default .icon-form input:checked + label,
+.default .modular-form input:checked + label {
+  opacity: 1;
+}
+/* line 164, ../../_sass/_form_types.scss */
+.default .icon-form h1,
+.default .icon-form .icon-male,
+.default .icon-form .fa-male,
+.default .icon-form .icon-female,
+.default .icon-form .fa-female {
+  background-color: #c8c8c8;
+}
+/* line 167, ../../_sass/_form_types.scss */
+.default .icon-form h1 {
+  padding: 10px 3px;
+}
+/* line 172, ../../_sass/_form_types.scss */
+.default .modular-form form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+/* line 177, ../../_sass/_form_types.scss */
+.default .modular-form fieldset {
+  margin: 10px;
+  padding: 0;
+  border: inherit;
+}
+/* line 182, ../../_sass/_form_types.scss */
+.default .modular-form hr {
+  background-color: #ddd;
+  border: none;
+  margin: 50px 0;
+  height: 1px;
+  width: 100%;
+}
+/* line 189, ../../_sass/_form_types.scss */
+.default .modular-form .table {
+  border-spacing: 0;
+}
+/* line 192, ../../_sass/_form_types.scss */
+.default .modular-form .cell {
+  width: 50%;
+  opacity: 0.3;
+}
+/* line 196, ../../_sass/_form_types.scss */
+.default .modular-form .row label:first-of-type {
+  border-right: 1px solid #ddd;
+}
+/* line 199, ../../_sass/_form_types.scss */
+.default .modular-form .card {
+  border: 1px solid #ddd;
+}
+/* line 202, ../../_sass/_form_types.scss */
+.default .modular-form .input-row {
+  min-height: 35px;
+  height: auto;
+}
+/* line 205, ../../_sass/_form_types.scss */
+.default .modular-form .input-row:last-of-type {
+  border-bottom: none;
+}
+/* line 208, ../../_sass/_form_types.scss */
+.default .modular-form .input-row label {
+  padding-left: 0;
+}
+/* line 213, ../../_sass/_form_types.scss */
+.default .modular-form input:not([type="date"]),
+.default .modular-form select {
+  background: #eee;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 8px 0;
+  height: 20px;
+  width: 65%;
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  font-size: 17px;
+  line-height: 1.1;
+}
+/* line 234, ../../_sass/_form_types.scss */
+.default .modular-form input[type=date] {
+  background-color: #eee;
+  padding: 0;
+  margin: 8px 0;
+  height: 20px;
+}
+/* line 240, ../../_sass/_form_types.scss */
+.default .modular-form input[type=checkbox] {
+  background: #eee;
+  height: 20px;
+  width: 20px;
+  float: left;
+}
+/* line 246, ../../_sass/_form_types.scss */
+.default .modular-form input[type=checkbox]:checked:before {
+  margin-left: 3px;
+  margin-top: 2px;
+  font-family: FontAwesome;
+  content: '\f00d';
+}
+/* line 255, ../../_sass/_form_types.scss */
+.default .large-modular-form form {
+  max-width: 568px;
+}
+/* line 259, ../../_sass/_form_types.scss */
+.default .large-modular-form input:not([type="checkbox"]),
+.default .large-modular-form select {
+  display: block;
+  border: none;
+  width: 100%;
+  min-width: 100%;
+  height: 50px;
+  font-size: 32px;
+  line-height: 48px;
+  padding: 0 10px;
+}
+/* line 269, ../../_sass/_form_types.scss */
+.default .large-modular-form .card {
+  margin: 0;
+}
+/* line 272, ../../_sass/_form_types.scss */
+.default .large-modular-form .field {
+  display: table;
+  width: 100%;
+}
+/* line 277, ../../_sass/_form_types.scss */
+.default .large-modular-form .field .label-wrapper,
+.default .large-modular-form .field .input-wrapper {
+  vertical-align: middle;
+  display: table-cell;
+}
+/* line 281, ../../_sass/_form_types.scss */
+.default .large-modular-form .field .label-wrapper {
+  padding-right: 20px;
+  text-align: right;
+  width: 29%;
+}
+/* line 286, ../../_sass/_form_types.scss */
+.default .large-modular-form .field .input-wrapper {
+  width: 71%;
+}
+/* line 292, ../../_sass/_form_types.scss */
+.default .large-modular-form .last-sex label,
+.default .large-modular-form .symptoms label {
+  vertical-align: middle;
+  padding: 5px 0;
+}
+/* line 296, ../../_sass/_form_types.scss */
+.default .large-modular-form .last-sex input,
+.default .large-modular-form .symptoms input {
+  height: 1px;
+}
+/* line 299, ../../_sass/_form_types.scss */
+.default .large-modular-form .last-sex h1,
+.default .large-modular-form .symptoms h1 {
+  margin-bottom: 5px;
+}
+/* line 303, ../../_sass/_form_types.scss */
+.default .large-modular-form .symptoms {
+  margin-top: 10px;
+}
+/* line 306, ../../_sass/_form_types.scss */
+.default .large-modular-form .postcode-validation {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 14px;
+  color: #c8c8c8;
+}
+/* line 314, ../../_sass/_form_types.scss */
+.default .windowed-form .content {
+  padding: 5% 0;
+}
+/* line 318, ../../_sass/_form_types.scss */
+.default .window {
+  position: fixed;
+  z-index: 1;
+  bottom: 20%;
+  right: 0;
+  left: 0;
+  top: 25%;
+}
+/* line 327, ../../_sass/_form_types.scss */
+.default .window:before, .default .window:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+}
+/* line 334, ../../_sass/_form_types.scss */
+.default .window:before {
+  background: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
+  z-index: 2;
+  top: 25%;
+}
+/* line 339, ../../_sass/_form_types.scss */
+.default .window:after {
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  bottom: 19%;
+}
