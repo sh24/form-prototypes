@@ -18,7 +18,7 @@ html {
 
 body {
   margin: 30px;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Montreal Regular";
   color: #3C464F;
 }
@@ -105,4 +105,8 @@ strong {
   display: block; 
   height: 0; 
   clear: both;
+}
+
+.STIs ul, li {
+  list-style-type: none;
 }
