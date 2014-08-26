@@ -75,6 +75,10 @@ strong {
   color: #3FBBCC;
 }
 
+.colon-icon {
+  float: right;
+}
+
 .tone-of-voice {
   color: #FFFFFF;
   background-color: #3C464F;
