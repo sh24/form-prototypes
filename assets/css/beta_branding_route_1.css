@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Montreal Regular";
+  src: local("Montreal-Regular");
+}
+
+@font-face {
+  font-family: "Montreal Bold";
+  src: local("Montreal-Bold");
+}
+
+body {
+  margin: 30px;
+  font-size: 15px;
+  font-family: "Montreal Regular";
+  color: #3C464F;
+}
+
+.colour-swatch {
+  color: #FFFFFF;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.pink {
+  background-color: #EE7678;
+}
+
+.light-blue {
+  background-color: #3FBBCC;
+}
+
+.medium-blue {
+  background-color: #06B0D9;
+}
+
+.light-grey {
+  background-color: #DADADA;
+}
+
+.dark-grey {
+  background-color: #3C464F;
+}
+
+.white {
+  border: 1px black solid;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.lead p {
+  font-family: "Montreal Bold";
+  font-size: 200%;
+  color: #3fbbcc;
+  width: 25%;
+}
+
+p {
+  width: 20%;
+}
+
+strong {
+  font-family: "Montreal Bold";
+}
+
+.sh24-colon {
+  color: #3FBBCC;
+}
+
+.tone-of-voice {
+  color: #FFFFFF;
+  background-color: #3C464F;
+  padding: 40px;
+  width: 590px;
+  height: 480px;
+}
+
+.tone-of-voice header {
+  font-family: "Montreal Bold";
+  font-size: 400%;
+  width: 10em;
+}
+
+.tone-of-voice p {
+  width: 50%;
+  margin-top: 150px;
+  float: right;
+}
+
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
+}
