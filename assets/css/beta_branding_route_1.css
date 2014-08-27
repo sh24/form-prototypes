@@ -63,10 +63,6 @@ body {
   width: 25%;
 }
 
-p {
-  width: 20%;
-}
-
 strong {
   font-family: "Montreal Bold";
 }
@@ -109,4 +105,13 @@ strong {
 
 .STIs ul, li {
   list-style-type: none;
+}
+
+.form-elements {
+  background-color: #DADADA;
+}
+
+a {
+  color: #3FBBCC;
+  font-weight: 700;
 }
