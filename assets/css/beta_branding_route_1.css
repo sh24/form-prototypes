@@ -23,6 +23,26 @@ body {
   color: #3C464F;
 }
 
+h1, h2 {
+  font-family: "Montreal Bold";
+}
+
+body > h3 {
+  text-decoration: underline;
+}
+
+body > h3:after {
+  content: ":"
+}
+
+.accordion h3 {
+  color: #ffffff;
+  margin: 2px;
+  background-color: #06b0d9;
+  width: 350px;
+  padding: 10px;
+}
+
 .colour-swatch {
   color: #FFFFFF;
   float: left;
@@ -60,55 +80,14 @@ body {
   font-family: "Montreal Bold";
   font-size: 200%;
   color: #3fbbcc;
-  width: 25%;
 }
 
 strong {
   font-family: "Montreal Bold";
 }
 
-.sh24-colon {
-  color: #3FBBCC;
-}
-
 .colon-icon {
   float: right;
-}
-
-.tone-of-voice {
-  color: #FFFFFF;
-  background-color: #3C464F;
-  padding: 40px;
-  width: 650px;
-  height: 480px;
-}
-
-.tone-of-voice header {
-  font-family: "Montreal Bold";
-  font-size: 400%;
-  width: 10em;
-}
-
-.tone-of-voice p {
-  width: 50%;
-  margin-top: 150px;
-  float: right;
-}
-
-.clearfix:after { 
-  content: "."; 
-  visibility: hidden; 
-  display: block; 
-  height: 0; 
-  clear: both;
-}
-
-.STIs ul, li {
-  list-style-type: none;
-}
-
-.form-elements {
-  background-color: #DADADA;
 }
 
 a {
@@ -117,7 +96,37 @@ a {
 }
 
 input[type=button] {
-  color: #3C464F;
+  color: #ffffff;
   background: #3FBBCC;
-  border: 1px solid #000;
+  border: none;
+  height: 45px;
+  min-width: 10%;
 }
+
+.form-elements {
+  margin: 10px;
+}
+
+input[type=text] {
+  background-color: #dadada;
+  height: 45px;
+  width: 10%;
+  font-size: 17px;
+}
+
+::-webkit-input-placeholder {
+  color: #dadada;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #dadada;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #dadada;
+}
+
+:-ms-input-placeholder {
+  color: #dadada;
+}
+
